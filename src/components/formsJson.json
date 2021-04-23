@@ -1,0 +1,31 @@
+{
+
+    "location":"delhi",
+    "showVaccinated":"true",
+    "oxygenNearby":{"status":"yes",
+                    "address":"delhi"
+                    },
+    "medicinesAvailable":{"status":"yes",
+                        "address":""
+                        },
+    "vaccineNearby":{"status":"yes",
+                            "address":""
+                            },
+     "covidRecPlasma":{
+                        "status":"yes",
+                        "address":""
+                    }                       
+}
+,
+
+{
+    "wantvaccination":"yes",
+    "date":"",
+    "location":"mumbai",
+    "mobile":"9536711985",
+    "name":"chetan",
+    "nearbyVaccineCenters":""
+},
+{
+    
+}
