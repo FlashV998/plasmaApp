@@ -1,38 +1,370 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+
+body{
+
+width: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden!important;
+/* overflow-y: hidden!important; */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media  only screen and (max-width: 480px){
+  html,body{overflow-x: hidden!important;height: 100%;}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+  --primary-dark:rgba(255,255,255,0)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+
+/******************************************8 header CSS 8**************************************************************************/
+/* ***************************************************************************************************************************** */
+
+.header-wrapper{
+  position: relative!important;
+  z-index:3;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJw2kAqtn_VZiz8GkzdtyC20iEdvttUGcwRrrPgQiQ2xI9xG6y9ILcQzUVOayLHeoWONs&usqp=CAU");
+
+  background-size: cover;
+  background-position: center;
+  height: 93vh;
+}
+
+.header-info{
   display: flex;
+  position: absolute;
+  top: 10rem;
+  /* bottom: 0; */
+  /* margin-bottom: 10rem; */
+  left: 0;
+  right: 0;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:center;
+  align-items: center ;
+  text-align: center;
+  color: #023e8a;
+  text-transform: uppercase;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+
+.glow {
+  color:#e45826;
+  margin-bottom: 4rem;
+  font-family: 'Dancing Script', cursive;
+  text-transform: none;
+  font-size: 4.063rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+.typed-text{
+margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.tsparticles-canvas-el{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 6
+}
+
+/* ********************************************************Upload image preview********************************** */
+.upload-thumb .thumb-edit input+label span {
+  
+}
+
+.upload-thumb .img-preview {
+  width: 49%;
+  height: 140px;
+  position: relative;
+  border-radius: 13px;
+  border: 0px solid #f8f8f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.upload-thumb .img-preview>.preview {
+  width: 100%;
+  height: 140px;
+  border-radius: 13px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+
+.upload-thumb .thumb-edit input+label,
+  .upload-img,
+  .upload-thumb .img-preview,
+  .upload-thumb .img-preview>.preview {
+    height: 100px;
+    line-height: 100px;
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #a1a1a1;
+    cursor: pointer;
   }
+    /* *************************************card css_**************************************************** */
+
+    /* body{
+      font-family: 'Nunito', sans-serif;
+      padding: 50px;
+    } */
+    .card{
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+          transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+      padding: 14px 80px 18px 36px;
+      cursor: pointer;
+      /* height: 320px; */
+      /* max-height: 420px;  */
+    }
+    
+    .card:hover{
+         transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+    
+    .card h3{
+      font-weight: 600;
+    }
+    
+    .card img{
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      max-height: 120px;
+    }
+    
+    .card-1{
+      background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+          background-repeat: no-repeat;
+        background-position: right;
+        background-size: 80px;
+    }
+    
+    .card-2{
+       background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+          background-repeat: no-repeat;
+        background-position: right;
+        background-size: 80px;
+    }
+    
+    .card-3{
+       background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+          background-repeat: no-repeat;
+        background-position: right;
+        background-size: 80px;
+    }
+    
+    @media(max-width: 990px){
+      .card{
+        margin: 20px;
+      }
+    } 
+    
+
+    /* ****************************************** footer*/
+
+    .secondNav{
+      height: 36px;
+left: 0px;
+top: 47px;
+
+background: #DBEDFC;
+    }
+
+    .footer{
+    background: #DBEDFC;
+    border: 1px solid rgba(45, 150, 235, 0.13);
+    box-sizing: border-box;
+    height: 56px;
+    }
+
+    .footer-text{
+
+      font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+
+    .icon1{
+      position: relative;
+left: 15%;
+right: 0%;
+top: 16.59%;
+bottom: 1.59%;
+    }
+    .icon2{
+      position: relative;
+      left: 40%;
+      right: 46.94%;
+      top: 16.59%;
+bottom: 1.59%;
+    }
+
+    .icon3{
+      position: relative;
+left: 55%;
+right: 6.05%;
+top:16.59%;
+bottom: 0%;
+    }
+
+
+    .headerText{
+      font-family: Roboto;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+color: #00335C;
+padding-top: 17%;
+
+    }
+
+    button{
+      width: 5rem;
+      background: #302F7E;
+border: 0.5px solid #83C1F2;
+box-sizing: border-box;
+border-radius: 2px;
+color: #fff;
+
+    }
+    .inputField
+    {width: 289px;
+      height: 28px;
+      background: rgba(224, 241, 255, 0.24);
+      border: 0.5px solid #83C1F2;
+      box-sizing: border-box;}
+
+    .buttonText{font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: uppercase;
+      
+      color: #FDFEFF;}
+
+    hr{
+      border: 1px dashed rgba(88, 88, 88, 0.44);
+      background-color:#fff;
+    }
+
+
+    .headerTextSec{
+      color: #00335C;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: .875rem;
+      line-height: 1rem;
+      
+
+    }
+
+    .headerTextThi{
+      font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #00335C;
+}
+
+.optionTitle{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #00335C;
+
+}
+
+.imgUploadBox{
+  height: 5rem;
+  width: 5rem;
+background: rgba(219, 237, 252, 0.65);
+border: 1px solid #A7D8FF;
+box-sizing: border-box;
+}
+
+.filterButton{
+  width: 3rem;
+  background: #D0EAFF;
+  border: 0.5px solid #004882;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+}
+.filterText{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+
+color: #585858;
+}
+
+.exploreCard{
+  background: #F8FCFF;
+  border: 1px solid #A9CBFF;
+  box-sizing: border-box;
+    margin-top:.5rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    margin-bottom: .2rem;
+}
+.imageBox{
+  width: 65px;
+height: 65px;
+background: #C4C4C4;
+
 }
